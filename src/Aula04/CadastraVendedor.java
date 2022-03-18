@@ -17,16 +17,14 @@ public class CadastraVendedor {
 		vendedor1.setNome(leitura.nextLine());
 		
 		System.out.println("Informe o salário do vendedor: ");
-		vendedor1.salarioInicial = leitura.nextDouble();
+		vendedor1.setSalarioInicial(leitura.nextDouble());
 
 		System.out.println("Informe as vendas do vendedor: ");
-		vendedor1.vendas = leitura.nextDouble();
+		vendedor1.setVendas(leitura.nextDouble());
 		
 		vendedor1.calculaSalarioFinal();
 		
 		vendedor1.imprimeVendedor();
-		leitura.nextLine();
-
 	}
 
 }
