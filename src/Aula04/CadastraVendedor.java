@@ -1,8 +1,11 @@
-package ExercicioAula03;
+package Aula04;
 
 import java.util.Scanner;
 
-public class ExercicioUsandoClasse {
+import Aula04.Vendedor;
+
+public class CadastraVendedor {
+
 	public static void main(String[] args) {
 		Scanner leitura = new Scanner(System.in);
 		Vendedor vendedor1 = new Vendedor();
@@ -11,8 +14,8 @@ public class ExercicioUsandoClasse {
 
 		//Usando vendedor método construtor vazio
 		System.out.println("Informe o nome do vendedor: ");
-		vendedor1.nome = leitura.nextLine();
-
+		vendedor1.setNome(leitura.nextLine());
+		
 		System.out.println("Informe o salário do vendedor: ");
 		vendedor1.salarioInicial = leitura.nextDouble();
 
@@ -23,22 +26,7 @@ public class ExercicioUsandoClasse {
 		
 		vendedor1.imprimeVendedor();
 		leitura.nextLine();
-		
-		//Usando vendedor que ao criar passa parâmetro
-		System.out.println("Informe o nome do vendedor: ");
-		nome = leitura.nextLine();
-		
-		System.out.println("Informe o salário do vendedor: ");
-		salarioInicial = leitura.nextDouble();
 
-		System.out.println("Informe as vendas do vendedor: ");
-		vendas = leitura.nextDouble();
-		
-		Vendedor vendedor2 = new Vendedor(nome, salarioInicial, vendas);
-		
-		vendedor2.calculaSalarioFinal();
-		
-		vendedor2.imprimeVendedor();
 	}
 
 }

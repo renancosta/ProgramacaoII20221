@@ -1,11 +1,11 @@
-package ExercicioAula03;
+package Aula04;
 
 public class Vendedor {
-	public String nome;
-	public int matricula;
-	public double salarioInicial;
-	public double salarioFinal;
-	public double vendas;
+	private String nome;
+	private int matricula;
+	private double salarioInicial;
+	private double salarioFinal;
+	private double vendas;
 	
 	public Vendedor() {
 		
@@ -18,6 +18,14 @@ public class Vendedor {
 		this.nome = nome;
 		this.salarioInicial = salarioInicial;
 		this.vendas = vendas;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	public void calculaSalarioFinal(){
