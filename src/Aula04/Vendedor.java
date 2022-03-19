@@ -64,4 +64,8 @@ public class Vendedor {
 	public void geraMatricula() {
 		matricula = ((int)(Math.random()*1000000));
 	}
+	
+	public double getSalarioFinal() {
+		return salarioFinal;
+	}
 }
