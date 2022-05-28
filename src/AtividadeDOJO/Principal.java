@@ -61,6 +61,6 @@ public class Principal {
 				System.out.println("Opção inválida!");
 				break;
 			}
-		} while (!opcao.equals("5"));
+		} while (!opcao.equals("6"));
 	}
 }
