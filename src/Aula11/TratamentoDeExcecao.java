@@ -20,6 +20,12 @@ public class TratamentoDeExcecao {
 		}
 	}
 	
+	/**
+	 * Método para leitura de um inteiro do teclado
+	 * Não tem parâmetro
+	 * @return É numero que o usuário informou
+	 * @throws InputMismatchException
+	 */
 	public static int lerIntDoTeclado() throws InputMismatchException{
 		Scanner leitura = new Scanner(System.in);
 		Integer num=null;
