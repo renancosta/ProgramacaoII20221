@@ -122,10 +122,10 @@ public class CadastrarAluno extends JDialog {
 				getRootPane().setDefaultButton(okButton);
 			}
 			{
-				JButton cancelButton = new JButton("Cancel");
+				JButton cancelButton = new JButton("Voltar");
 				cancelButton.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						setDefaultCloseOperation(JDialog.EXIT_ON_CLOSE);
+						setVisible(false);
 					}
 				});
 				cancelButton.setActionCommand("Cancel");
